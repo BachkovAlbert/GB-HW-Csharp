@@ -35,6 +35,23 @@ if(b > a)
 44 5 78 -> 78
 22 3 9 -> 22
 */
+Console.Clear(); 
+
+int Num1, Num2, Num3, Max;
+
+Console.Write("Input first integer Number: ");
+Num1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input second integer Number: ");
+Num2 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input third integer Number: ");
+Num3 = Convert.ToInt32(Console.ReadLine());
+Max = Num1;
+if(Num1 > Max) Max = Num1;
+if(Num2 > Max) Max = Num2;
+if(Num3 > Max) Max = Num3;
+Console.Write("Max = " + Max);
 
 /*
 Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
