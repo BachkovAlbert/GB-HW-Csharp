@@ -31,10 +31,6 @@ if(b > a)
 /*
 Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
-2, 3, 7 -> 7
-44 5 78 -> 78
-22 3 9 -> 22
-*/
 Console.Clear(); 
 
 int Num1, Num2, Num3, Max;
@@ -52,6 +48,7 @@ if(Num1 > Max) Max = Num1;
 if(Num2 > Max) Max = Num2;
 if(Num3 > Max) Max = Num3;
 Console.Write("Max = " + Max);
+*/
 
 /*
 Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
@@ -59,7 +56,25 @@ Console.Write("Max = " + Max);
 4 -> да
 -3 -> нет
 7 -> нет
+*/
 
+Console.Clear();
+
+int Num;
+
+Console.Write("Input integer Number: ");
+Num = Convert.ToInt32(Console.ReadLine());
+
+if(Num % 2 == 0)
+{
+    Console.Write("even Number (Четное) ");
+}
+else
+{
+    Console.Write("odd Number (Нечетное) ");
+}
+
+/*
 Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
 5 -> 2, 4
