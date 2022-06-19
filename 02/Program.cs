@@ -38,7 +38,7 @@ else
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-///*
+/*
 
 Console.Clear();
 
@@ -68,13 +68,46 @@ else
     Console.WriteLine($"Third digit is {NumT[2]}");
 }
 
-//*/
+*/
+
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
 /*
-Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
-6 -> да
-7 -> да
-1 -> нет
+Console.Clear();
+
+int Function(int Num)
+{
+    if (Num == 6 || Num == 7)
+    {
+        return -1;
+    }
+    else if (Num < 1 || Num > 7)
+    {
+        return -2;
+    }
+    else
+    {
+        return -3;
+    }
+}
+
+Console.Write($"Input a integer positive number(1-7): ");
+int Num = Convert.ToInt32(Console.ReadLine());
+int result = Function(Num);
+
+if(result == -1)
+{
+    Console.WriteLine("Выходной день - ДА");
+}
+if(result == -2)
+{
+    Console.WriteLine("Такого дня недели нету");
+}
+if(result == -3)
+{
+    Console.WriteLine("Выходной день - НЕТ");
+}
 
 */
