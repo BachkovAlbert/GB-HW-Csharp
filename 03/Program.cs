@@ -46,7 +46,26 @@ Console.WriteLine($"A ({xA},{yA},{zA}); B ({xB},{yB},{zB}), -> {FindLenght(xA, y
 
 */
 
-//Задача 23 Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+//Задача 23 Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N(включительно).
 
 //3 -> 1, 8, 27
 //5 -> 1, 8, 27, 64, 125
+
+Console.Clear();
+
+void Cube(int Num)
+{
+    int current = 1;
+    while(current <= Num)
+    {
+        Console.Write((Math.Pow(current, 3)) + ", ");
+        current++;
+    }
+    
+}
+
+Console.Write("Input integer positive Number: ");
+int Num = Convert.ToInt32(Console.ReadLine());
+
+Cube(Num);
+
