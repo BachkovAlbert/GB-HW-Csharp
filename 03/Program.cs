@@ -1,6 +1,6 @@
 ﻿// Задача 19 Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
-
+/*
 
 Console.Clear();
 
@@ -17,12 +17,34 @@ void Function(string Num)
 if (Num.Length == 5) Function(Num);
 else Console.WriteLine($"It is not a five-digit number");
 
-
+*/
 
 // Задача 21 Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
-//A (3,6,8); B (2,1,-7), -> 15.84
-//A (7,-5, 0); B (1,-1,9) -> 11.53
+/*
+
+Console.Clear();
+
+double FindLenght(double xA, double yA, double zA, double xB, double yB, double zB)
+{
+    return Math.Sqrt(Math.Pow(xB - xA, 2) + Math.Pow(yB - yA, 2) + Math.Pow(zB - zA, 2));
+}
+Console.Write("x1 = ");
+int xA = Convert.ToInt32(Console.ReadLine());
+Console.Write("y1 = ");
+int yA = Convert.ToInt32(Console.ReadLine());
+Console.Write("z1 = ");
+int zA = Convert.ToInt32(Console.ReadLine());
+Console.Write("x2 = ");
+int xB = Convert.ToInt32(Console.ReadLine());
+Console.Write("y2 = ");
+int yB = Convert.ToInt32(Console.ReadLine());
+Console.Write("z2 = ");
+int zB = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"A ({xA},{yA},{zA}); B ({xB},{yB},{zB}), -> {FindLenght(xA, yA, zA, xB, yB, zB)}");
+
+*/
 
 //Задача 23 Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
