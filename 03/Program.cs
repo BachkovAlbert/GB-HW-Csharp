@@ -1,11 +1,12 @@
 ﻿// Задача 19 Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
-/*
+
 
 Console.Clear();
 
-Console.Write("Input integer five-digit number: ");
-string Num = Console.ReadLine();
+Console.Write("Input integer positive five-digit number: ");
+int Num0 = Convert.ToInt32(Console.ReadLine());                 
+string Num = Convert.ToString(Num0);
 
 void Function(string Num)
 {
@@ -16,7 +17,7 @@ void Function(string Num)
 if (Num.Length == 5) Function(Num);
 else Console.WriteLine($"It is not a five-digit number");
 
-*/
+
 
 // Задача 21 Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
