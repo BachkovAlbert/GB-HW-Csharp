@@ -82,6 +82,7 @@ Console.Write($" -> {SumOddPositionIndexOfArray(myArray)} (sum of elements in od
 */
 
 //Задача 38: Задайте массив вещественных(дробных, см. Random().NextDouble()) чисел. Найдите разницу между максимальным и минимальным элементов массива.
+//[3 7 22 2 78] -> 76
 //Вариант 1
 /*
 
@@ -93,8 +94,8 @@ double[] CreateRandomArray(int size, int max, int min)
 
     for(int i = 0; i < size; i++)
     {
-        newArray[i] = new Random().NextDouble() * (min + max);
-        Console.Write(newArray[i] + " ");
+        newArray[i] = new Random().NextDouble() * (max - min) + min;
+        Console.Write(Math.Round(newArray[i], 0) + " ");                //Console.Write(newArray[i] + " "); без округления
     }
     
     return newArray;
@@ -124,7 +125,7 @@ int max = Convert.ToInt32(Console.ReadLine());
 
 double[] myArray = CreateRandomArray(size, max, min);
 
-Console.Write($" -> {DifferenceMaxAndMin(myArray)} (difference between maximum and minimum array elements)");
+Console.Write($" -> {Math.Round(DifferenceMaxAndMin(myArray), 0)} (difference between maximum and minimum array elements)");       //Console.Write($" -> {DifferenceMaxAndMin(myArray)} (difference between maximum and minimum array elements)"); - без округления
 
 */
 
