@@ -1,6 +1,6 @@
 ﻿// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 
-/*
+///*
 
 Console.Clear();
 
@@ -22,11 +22,11 @@ int EvenNumbersInArray(int[] array)
     int count = 0;
     for(int i = 0; i < array.Length; i++)
     {
-        if(array[i] % 2 > 0) 
+        if(array[i] % 2 == 0)                // if(array[i] % 2 > 0)   либо так со строкой (//29)
         count++;
     }
 
-    return count = array.Length - count;
+    return count;                           // count = array.Length - count;
 }
 
 Console.Write("Input size array: ");
@@ -36,7 +36,7 @@ int[] myArray = CreateRandomArray(size);
 
 Console.Write($" -> {EvenNumbersInArray(myArray)} (even numbers)");
 
-*/
+//*/
 
 // Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 
