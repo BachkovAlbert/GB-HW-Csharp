@@ -1,5 +1,44 @@
 ﻿// Задача 25: Напишите программу, которая принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 
+//Вариант 1.
+/*
+
+Console.Clear();
+
+double Function(double A, double B)
+{
+    double R = A;
+    double i = 1;
+    if(i < B)
+    {
+        while(i < B)
+        {
+            R = R * A;
+            i++;
+        }
+        return R;
+    }
+    else 
+    {
+        i = - 1;
+        while(i > B)
+        {
+            R = R * A;
+            i--;
+        }
+        return R = 1 / R;
+    }
+}
+Console.Write("Input integer first number: ");
+double A = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input integer second number: ");
+double B = Convert.ToDouble(Console.ReadLine());
+
+Console.Write($"{A}^{B} -> {Function(A,B)}");
+
+*/
+
+//Вариант 2.
 /*
 
 Console.Clear();
