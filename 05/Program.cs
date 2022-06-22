@@ -86,13 +86,14 @@ Console.Write($" -> {SumOddPositionIndexOfArray(myArray)} (sum of elements in od
 /*
 
 Console.Clear();
-double[] CreateRandomArray(int size, int max)
+
+double[] CreateRandomArray(int size, int max, int min)
 {
     double[] newArray = new double[size];
 
     for(int i = 0; i < size; i++)
     {
-        newArray[i] = new Random().NextDouble() * max;
+        newArray[i] = new Random().NextDouble() * (min + max);
         Console.Write(newArray[i] + " ");
     }
     
@@ -115,10 +116,13 @@ double DifferenceMaxAndMin(double[] array)
 
 Console.Write("Input size array: ");
 int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input start of range (from): ");
+int min = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input end of range (to): ");
 int max = Convert.ToInt32(Console.ReadLine());
 
-double[] myArray = CreateRandomArray(size, max);
+
+double[] myArray = CreateRandomArray(size, max, min);
 
 Console.Write($" -> {DifferenceMaxAndMin(myArray)} (difference between maximum and minimum array elements)");
 
