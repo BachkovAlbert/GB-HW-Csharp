@@ -44,7 +44,7 @@ Console.Clear();
 
 int Function(int Num)
 {
-    if(Num > 100 && Num > 10)
+    if(Num > 100)                       // (before verification) if(Num > 100 && Num > 10)
     {
         return Num;
     }

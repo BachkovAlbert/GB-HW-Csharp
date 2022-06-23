@@ -46,7 +46,7 @@ Num2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input third integer Number: ");
 Num3 = Convert.ToInt32(Console.ReadLine());
 Max = Num1;
-if(Num1 > Max) Max = Num1;
+                                                        //  (after verification) delete string if(Num1 > Max) Max = Num1; 
 if(Num2 > Max) Max = Num2;
 if(Num3 > Max) Max = Num3;
 Console.Write("Max = " + Max);
