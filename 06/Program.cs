@@ -10,7 +10,7 @@ int[] ArrayNumbers = new int[M];
 
 void InputNumbers(int M)
 {
-for (int i = 0; i < M; i++)
+  for (int i = 0; i < M; i++)
   {
     Console.Write($"Input number {i+1} : ");
     ArrayNumbers[i] = Convert.ToInt32(Console.ReadLine());
@@ -45,10 +45,10 @@ int[] ArrayNumbers = new int[Size];
 
 void InputNumbers(int Size)
 {
-for (int i = 0; i < Size; i++)
+  for (int i = 0; i < Size; i++)
     {
-        Console.Write($"Input number {i+1} : ");
-        ArrayNumbers[i] = Convert.ToInt32(Console.ReadLine());
+      Console.Write($"Input number {i+1} : ");
+      rrayNumbers[i] = Convert.ToInt32(Console.ReadLine());
     }
 }
 
